@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WFRP Rules Reference</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Game Mechanics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="story.html">Quest Notes</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h1 class="text-center mt-5">Game Mechanics</h1>
+    <p></p>
+    <h2 class="text-center">Skills</h2>
+    <p></p>
+    <h3>Standard skill checks</h3>
+    <h3>Opposed skill checks</h3>
+    <h2 class="text-center">Melee Combat</h2>
+    <h3>1. Choose an attack action</h3>
+    <h4>All Out Attack</h4>
+    <h4>Charge Attack</h4>
+    <h4>Guarded Attack</h4>
+    <h4>Standard Attack</h4>
+    <h4>Swift Attack</h4>
+    <h3>2. Roll to hit</h3>
+    <p>
+      Roll a d100 plus any modifiers and compare this to the characters Weapon Skill (<strong>WS</strong>).
+      If the roll is below the characters WS then the attack hits.
+    </p>
+    <p>
+      Common modifiers:
+    </p>
+    <ul>
+      <li>e.g.</li>
+    </ul>
+    <div class="my-5 example d-flex">
+      <button id="to-hit-roll">Roll</button>
+      <p id='to-hit-result'></p>
+    </div>
+    <h3>3. Determine hit location</h3>
+    <p>
+      Reverse the die roll, and compare it against this chart:
+    </p>
+    <table class="table text-center">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Roll</th>
+          <th scope="col">Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">0 - 15</td>
+          <td scope="row">Head</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td scope="row">16 - 35</td>
+          <td scope="row">Right Arm</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td scope="row">36 - 55</td>
+          <td scope="row">Left Arm</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td scope="row">56 - 80</td>
+          <td scope="row">Body</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td scope="row">81 - 90</td>
+          <td scope="row">Right Leg</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td scope="row">91 - 00</td>
+          <td scope="row">Left Leg</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>4. Roll for damage</h3>
+    <p>
+      Roll a d10, add your SB and any bonus/malus from your weapon, then subtract toughness of the opponent and any armour worn on the hit location
+    </p>
+    <!-- <h2 class="text-center">Ranged Combat</h2>
+    <h2 class="text-center">Magic</h2> -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
